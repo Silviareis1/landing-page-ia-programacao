@@ -177,6 +177,11 @@ body {
   gap: 20px;
 }
 
+#programadores .cards,
+#ferramentas .cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card {
   background: rgba(255,255,255,0.05);
 
@@ -203,6 +208,15 @@ body {
 
 .card h3 {
   margin: 12px 0;
+}
+
+@media (max-width: 960px) {
+
+  #programadores .cards,
+  #ferramentas .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
 }
 
 .timeline {
@@ -287,6 +301,15 @@ body {
 
   .hero h2 {
     font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  #programadores .cards,
+  #ferramentas .cards {
+    grid-template-columns: 1fr;
   }
 
 }
